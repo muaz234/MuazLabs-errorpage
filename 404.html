@@ -1,7 +1,6 @@
 <html>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1" >
-
 <head>
   <title>
     Error Page
@@ -15,17 +14,18 @@
     .bg-image {
       background-size: 25%;
       background-repeat: no-repeat;
+      height: 100%;
     }
 
     .bg-image::after {
       content: "";
       background-image: url(images/bg.jpg);
       opacity: 0.7;
+      position: absolute;
       top: 0;
       left: 0;
       bottom: 0;
       right: 0;
-      position: absolute;
       z-index: -1;
     }
 
@@ -34,7 +34,6 @@
       left: 0;
       bottom: 0;
       width: 100%;
-      height: 4%;
       padding: auto;
       background-color: #9999ff;
       color: white;
@@ -42,10 +41,9 @@
     }
 
     .box {
-      margin-top: 200px;
-      margin-bottom: 60px;
-      margin-right: 200px;
-      margin-left: 450px;
+      margin: auto;
+      position: relative;
+      top: 50px;
       width: 50%;
       height: 50%;
       background-color: white;
@@ -55,6 +53,7 @@
 
     .content {
       opacity: 0.8;
+      height: 100%;
     }
 
     .img {
